@@ -53,15 +53,19 @@
 						  
 							<article>
 								<header>
-									<h2>Procedural Planets - WIP:</h2>
+									<h2>Procedural Planets:</h2>
 									<video width="100%" height="100%" controls>
 										<source src="videos/Procedural Planets - WIP.mp4" type="video/mp4">
 									</video>
 								</header>
 										<p><font size="3">
-										For my Final Year Project, I decided to develop a tool designed to procedurally generate planet models. This is the current state of the project, and shows the implementation of a normalised cube with a 3D height map applied to it generated from a combination of layered and ridgid simplex noise.
+										For my Final Year Project, I decided to develop a tool designed to procedurally generate planet models. This is the current state of the project (as submitted), and shows the implementation of a normalised cube with a 3D height map applied to it generated from a combination of layered and ridged simplex noise.
 										The texturing is also handled procedurally through a shader which blends between user specified colours depending on the terrains elevation in addition to its steepness. 
-										<br><br>This will be taken further with a simulation of hydraulic erosion applied, which will allow for more realistic looking terrain, and may also add additional elements to the model such as rivers.
+										<br>To improve the realism of the produced mesh, I also implemented a hydraulic erosion simulation that is ran after the base mesh is produced. This adds realism by smoothing out flat terrain, better defining terrain features such as mountains and adding additional elements to the model such as rivers and mountain gullies.
+										<br>Another artefact was produced which made use of Voxels instead of offseting a sphere mesh using a heightmap. This method allowed for the generation of terrain features that the heightmap method could not, namely overhangs and cave systems.
+										<br><br>Download the artefacts:
+										<br><a href="CV - Chris Wolyniec.docx" download>Heightmap Terrain (Heightmap.zip)</a>
+										<br><a href="CV - Chris Wolyniec.docx" download>Voxel Terrain (Voxel.zip)</a>
 										</font></p>
 								<br>
 							</article>
