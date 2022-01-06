@@ -72,6 +72,66 @@
 
 						 	 	<article>
 									<header>
+										<h2>Rome REMASTERED:</h2>
+										<img width="100%" height="100%" src="images/Portfolio/RomeRemastered.jpeg" alt="Rome Remastered">
+									</header>
+											<p><font size="3">
+											During my placement year working at Feral Interactive, I worked on Total War: Rome REMASTERED. During my time working on Rome, I worked in a variety of areas including implementing new gameplay, AI and UI features, developing new library functionality and general optimisation.<br>
+											My main task was creating a new system which would allow users to easily mod the game, allowing them to tweak it to their liking. To achieve this, I implemented a file redirection system, which allowed modders to provide modified versions of the various data files in addition to the original unchanged files, with the game automatically loading the modified files.<br>
+											To support this and make the experience easier for end-users, I also implemented Steam Workshop support, so users could easily download and install mods, with very little technical knowhow required.
+											Since returning to Feral, I have been working on the post-release patches, with my main focus being on stability and also continuing to improve the modability of the game by working with members of the games community to provide additional functionality for them to make use of in their mods.
+											</font></p>
+								</article>
+								
+						 	 	<article>
+									<header>
+										<h2>Erebus - Game Engine:</h2>
+										<video width="100%" height="100%" controls>
+											<source src="videos/Erebus.mp4" type="video/mp4">
+										</video>
+									</header>
+											<p><font size="3">
+											In my final year of University, I worked with a group of friends to produce a 2D games engine. My main contributions to the engine were the event system, input system and the various AI releated systems such as the pathfinding and behaviour tree editor.<br>
+											The input system I implemented was inspired by how the system works in UE4 and issues I found in my previous projects. I found in previous projects that I had issued when I wanted to alter which keys were bound to certain actions as all the binding were hardcoded.
+											Due to this, I implemented a system similar to UE4's in which keys are bound to a keyname, and then said keyname is used in code. This level of indirection allows for keybinding to be easily altered as no code changes need to be made, just the binding in the data file. I then implemented a GUI for generating/altering said data file to make this even easier.<br>
+											I also added a behaviour tree to the engine to allow users to easily create agent AI's. The feature required a programmer to create leaf nodes for controlling the agent, and then provides the choice of either creating the tree itself via code, or through a GUI. The GUI allows for alterations to the AI's logic, such as the order it performs actions and its priorities to be performed by those who may not have programming knowledge, such as designers.<br>
+											
+											Continuing from this project, I plan to develop my own 2D games engine, using what we learnt during this project to help me to produce an overall better project, both in terms of the code, and the usability of the engine. 
+											</font></p>
+								</article>
+								
+						 	 	<article>
+									<header>
+										<h2>Chess AI:</h2>
+										<video width="100%" height="100%" controls>
+											<source src="videos/Chess.mp4" type="video/mp4">
+										</video>
+									</header>
+											<p><font size="3">
+											This Chess AI allowed me to research into many different methods for optimising decision making. The main technique used in my AI is the minimax algorithm.<br>
+											This allows the AI to look into all the possible future states of the game (limitied by either a max depth or time), and then make the move that will lead to the best outcome for itself.<br>
+											However, as the amount of board states that need to be evaluated increases exponentially as the search depth increases, optimisations to the base minimax algorithm had to be made to reduce the amount of states that need to be evaluated.<br>
+											The main technique used for this was alpha-beta pruning, which essentially prunes entire sections of the search tree (therefore reducing what needs to be evaluated). It does this my pruning any branches that are worse than an already evaluated branch, as they should never be chosen, and therefore dont need to be evaluated any further.<br>
+											To improve upon this further, additional techniques were used to optimise alpha-beta, as it works best when the best moves are evaluated first, as more branches can be pruned this way. Method such as simply sorting the possible moves by the material gained/lost and also implementing additional techniques such as iterative deepending allowed me to achieve this.
+											</font></p>
+								</article>
+								
+						 	 	<article>
+									<header>
+										<h2>FlappyBird AI:</h2>
+										<video width="100%" height="100%" controls>
+											<source src="videos/Flappy Bird - Neural Network.mp4" type="video/mp4">
+										</video>
+									</header>
+											<p><font size="3">
+											As part of my AI module, I created a flappy bird AI that made use of neural networks and genetic algorithms in order to learn how to play the game.<br>
+											The AI does this by taking data from the game such as the birds distance from the floor, distance to the pipe etc, running said data through a neural network and then using its output to decide whether the bird should flap or not.<br>
+											As can be seen in the video, the initial generation of birds have entirely random behaviour due to the networks weights and biases being randomised. However by using genetic algorithms, I was able to take the best of each generation, and use them to create a new generation, with the aim of the birds score improving with each generation.
+											</font></p>
+								</article>
+
+						 	 	<article>
+									<header>
 										<h2>AI Tank:</h2>
 										<video width="100%" height="100%" controls>
 											<source src="videos/AI Tank.mp4" type="video/mp4">
